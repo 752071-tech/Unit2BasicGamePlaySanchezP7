@@ -8,6 +8,10 @@ public class PlayerController : MonoBehaviour
     public float xRange = 10.0f;
 
     public GameObject projectilePrefab;
+
+    public float zMin;
+    public float zMax;
+    public float verticalInput;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -33,6 +37,8 @@ public class PlayerController : MonoBehaviour
             // Launch a projectile from the player
             Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
         }
-   
+
+        verticalInput = Input.GetAxis("Vertical"); transform.Translate(Vector3.forward * verticalInput * Time.deltaTime * speed);
+
     }   
 }

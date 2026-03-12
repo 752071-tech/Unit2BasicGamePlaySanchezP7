@@ -100,6 +100,8 @@ GameObject:
   - component: {fileID: 8792784178171381898}
   - component: {fileID: 797768391701655785}
   - component: {fileID: 1243982559418815053}
+  - component: {fileID: 7790453175065191643}
+  - component: {fileID: 872795818349533583}
   m_Layer: 0
   m_Name: Animal_Fox_01
   m_TagString: Untagged
@@ -181,6 +183,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10db498befa40f94690ecf01b0f8fd4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!54 &7790453175065191643
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1243484224949282594}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &872795818349533583
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1243484224949282594}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.07956529, y: 0.23978408, z: 0.3278981}
+  m_Center: {x: 0.0018589735, y: 0.08950442, z: 0.008383632}
 --- !u!1 &2890662939072875157
 GameObject:
   m_ObjectHideFlags: 0

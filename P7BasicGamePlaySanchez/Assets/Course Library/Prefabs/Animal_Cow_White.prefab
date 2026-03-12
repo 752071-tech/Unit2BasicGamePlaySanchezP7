@@ -695,6 +695,8 @@ GameObject:
   - component: {fileID: 4026416784007324827}
   - component: {fileID: 6844748359610320767}
   - component: {fileID: 5597188723299051175}
+  - component: {fileID: 4093342653612597757}
+  - component: {fileID: 6933104679765222566}
   m_Layer: 0
   m_Name: Animal_Cow_White
   m_TagString: Untagged
@@ -765,6 +767,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10db498befa40f94690ecf01b0f8fd4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &4093342653612597757
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3165569720382917712}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 15.615176, y: 33.050186, z: 49.330276}
+  m_Center: {x: 0.32507047, y: 16.025097, z: -0.16772482}
+--- !u!54 &6933104679765222566
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3165569720382917712}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &3233900248524359765
 GameObject:
   m_ObjectHideFlags: 0
