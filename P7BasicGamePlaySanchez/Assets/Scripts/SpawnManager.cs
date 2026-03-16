@@ -30,20 +30,16 @@ public class SpawnManager : MonoBehaviour
         float z = Random.Range(-spawnRangeZ, spawnRangeZ);
         Vector3 spawnPos = new Vector3(x, 0, z);
 
-        // Face inward toward the center
         Quaternion rotation = spawnLeft ? Quaternion.Euler(0, 90, 0) : Quaternion.Euler(0, -90, 0);
 
         GameObject animal = Instantiate(animalPrefabs[animalIndex], spawnPos, rotation);
 
-        // Apply speed to any MoveForward component on the animal
         MoveFoward mf = animal.GetComponent<MoveFoward>();
         if (mf != null)
             mf.speed = animalSpeed;
 
-        // Tag the animal so the player can detect it
         animal.tag = "Animal";
 
-        // Destroy after 10 seconds to avoid clutter
         Destroy(animal, 10f);
     }
 
